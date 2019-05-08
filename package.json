@@ -10,5 +10,9 @@
     "concurrently": "^4.1.0",
     "express": "^4.16.4",
     "nodemon": "^1.19.0"
+  },
+  "scripts": {
+    "client": "npm run start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
   }
 }
